@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: tekst;
+  src: url("../public/fonts/tekst.woff2");
+}
+@font-face {
+  font-family: italic;
+  src: url("../public/fonts/tekstitalic.woff2");
+}
+
+.scroll-watcher {
+  height: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: rgb(113, 113, 113);
+  width: 10000%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll(y);
+}
+
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+  }
+}
+
+@font-face {
+  font-family: tekst;
+  src: url("../public/fonts/tekst.woff2");
+}
+@font-face {
+  font-family: italic;
+  src: url("../public/fonts/tekstitalic.woff2");
+}
+@media (max-width: 700px) {
+  p {
+    font-size: 20px;
+    color: #221f20;
+    font-family: tekst;
+  }
+  h2,
+  h6 {
+    font-size: 30px;
+    color: #221f20;
+  }
+  .artikel_tekst {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0 15% 0% 15%;
+  }
+  .grup_3 {
+    position: relative;
+  }
+  .grup_4 {
+    background-image: url("../public/img/artikel_baggrund1.jpg");
+  }
+  .olena {
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
+  .taske {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+  }
+  .ramme_interview {
+    width: 100%;
+  }
+  .interview_flex {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+  }
+  .traad {
+    position: absolute;
+    width: 80%;
+    left: 5%;
+  }
+  .hjerte_traad {
+    position: absolute;
+    width: 200px;
+    margin-left: 10%;
+  }
+  .videobackground {
+    max-width: 100%;
+  }
+  .background {
+    background-image: url("../public/img/baggrund_artikel.jpg");
+  }
+  .artikel_tekst_slut {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0 25% 0% 25%;
+    color: #221f20;
+  }
+  .artikel_tekst_video {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    margin: 0 25% 0% 25%;
+  }
+  .artikel_tekst_video p {
+    font-family: tekst;
+    color: #221f20;
+  }
+}
+
+body {
+  background-color: var(--main-black-color);
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 700px) {
+  p {
+    font-size: 32px;
+    font-family: tekst;
+  }
+  h2 {
+    font-size: 30px;
+    color: #221f20;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h6 {
+    font-size: 30px;
+    color: #221f20;
+    font-family: italic;
+  }
+  .h6_margin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .artikel_tekst {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    margin: 0 25% 0% 25%;
+    color: #221f20;
+  }
+  .artikel_tekst_slut {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0 25% 0% 25%;
+    color: #221f20;
+  }
+  .grup_2 {
+    background: url("../public/img/artikel_baggrund_final.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    min-height: 2000px;
+  }
+  .traad {
+    position: absolute;
+    width: 1190px;
+    left: 10%;
+  }
+  .grup_4 {
+    background-image: url("../public/img/artikel_baggrund1.jpg");
+    position: relative;
+    top: -300px;
+  }
+  .grup_3 {
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+  }
+  .interview_flex {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 5em;
+    right: 25%;
+    top: 15%;
+  }
+  .olena {
+    position: absolute;
+    top: 100px;
+    width: 500px;
+    left: 200px;
+  }
+  .ramme_interview {
+    width: 95%;
+    position: relative;
+    margin-left: 5%;
+    top: -400px;
+  }
+  .taske {
+    position: absolute;
+    top: 500px;
+    width: 300px;
+    left: 900px;
+  }
+  .grup_5 {
+    position: relative;
+    min-height: 700px;
+  }
+  .grup_6 {
+    background-color: white;
+    position: relative;
+    display: flex;
+    min-height: 700px;
+  }
+  .background {
+    background-image: url("../public/img/baggrund_artikel.jpg");
+  }
+  .hjerte_traad {
+    position: absolute;
+    width: 600px;
+    margin-left: 10%;
+  }
+  .artikel_tekst_video {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    margin: 0 25% 0% 25%;
+  }
+  .artikel_tekst_video p {
+    font-family: tekst;
+    color: white;
+    background-color: rgba(72, 72, 72, 0.114);
+  }
+  .videobackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center; /* Juster positionen for at minimere beskæring */
+    z-index: -10; /* Sikrer, at videoen ligger under indholdet */
+  }
+}

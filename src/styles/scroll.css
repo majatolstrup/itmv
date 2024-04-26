@@ -1,0 +1,76 @@
+.olena {
+  animation: animation linear forward;
+  animation-timeline: view();
+  animation-range: 250px 500px;
+}
+@keyframes animation {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+.interview_flex {
+  animation: textscroll linear;
+  animation-timeline: view();
+}
+@keyframes text_scroll {
+  from {
+    translate: -400% 0;
+  }
+  to {
+    translate: 0 0;
+  }
+}
+.parallax_1 {
+  /* The image used */
+  background: url("../img/butik.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+}
+.parallax_2 {
+  /* The image used */
+  background: url("../img/syerske1.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+}
+.tekstbox_left,
+.tekstbox_right {
+  height: 100%;
+  font-size: 32px;
+  color: rgb(13, 13, 13);
+  background-color: #f0eeebbb;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tekstbox_left {
+  margin: 10% 40% 25% 5%;
+}
+
+.tekstbox_right {
+  margin: 0% 5% 10% 40%;
+}
